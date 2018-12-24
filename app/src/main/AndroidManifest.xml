@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zkovar.foodfinderkt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <action android:name="android.location.PROVIDERS_CHANGED" /> -->
+        <activity android:name="com.inducesmile.Eceats.Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.location.LocationActivity" />
+        <activity
+            android:name="com.inducesmile.Eceats.Activity.HomeActivity"
+            android:label="@string/title_activity_music"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.inducesmile.Eceats.Activity.Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.inducesmile.Eceats.Activity.Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name="com.inducesmile.Eceats.GpsLocationReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.inducesmile.Eceats.Activity.AddRestaurant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.inducesmile.Eceats.Activity.ResList" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBsSu8pRPiyTT0FD45upa49HkaHmI7p4Pw"
+            tools:node="replace" />
+
+        <activity android:name=".Activity.Page" />
+        <activity android:name=".fragment.Display" />
+        <activity android:name=".Activity.Support"></activity>
+    </application>
+
+</manifest> <!-- <application --><!-- android:allowBackup="true" --><!-- android:icon="@drawable/splash" --><!-- android:label="@string/app_name" --><!-- android:supportsRtl="true" --><!-- android:theme="@style/AppTheme"> --><!-- &lt;!&ndash; <action android:name="android.location.PROVIDERS_CHANGED" /> &ndash;&gt; --><!-- <activity android:name="com.inducesmile.Eceats.Activity.SplashActivity"> --><!-- <intent-filter> --><!-- <action android:name="android.intent.action.MAIN" /> --><!-- <category android:name="android.intent.category.LAUNCHER" /> --><!-- </intent-filter> --><!-- </activity> --><!-- <activity --><!-- android:name="com.inducesmile.Eceats.Activity.HomeActivity" --><!-- android:label="@string/title_activity_music" --><!-- android:theme="@style/AppTheme.NoActionBar" /> --><!-- <activity --><!-- android:name="com.inducesmile.Eceats.Activity.Register" --><!-- android:theme="@style/AppTheme.NoActionBar" /> --><!-- <activity --><!-- android:name="com.inducesmile.Eceats.Activity.Login" --><!-- android:theme="@style/AppTheme.NoActionBar" /> --><!-- <receiver android:name="com.inducesmile.Eceats.GpsLocationReceiver"> --><!-- <intent-filter> --><!-- <action android:name="android.location.PROVIDERS_CHANGED" /> --><!-- <category android:name="android.intent.category.DEFAULT" /> --><!-- </intent-filter> --><!-- </receiver> --><!-- <activity --><!-- android:name="com.inducesmile.Eceats.Activity.AddRestaurant" --><!-- android:theme="@style/AppTheme.NoActionBar" /> --><!-- <activity android:name="com.inducesmile.Eceats.Activity.ResList" /> --><!-- <meta-data --><!-- tools:node="replace" --><!-- android:name="com.google.android.geo.API_KEY" --><!-- android:value="AIzaSyBsSu8pRPiyTT0FD45upa49HkaHmI7p4Pw" /> --><!-- </application> --><!-- <application --><!-- android:allowBackup="true" --><!-- android:icon="@mipmap/ic_launcher" --><!-- android:label="@string/app_name" --><!-- android:roundIcon="@mipmap/ic_launcher_round" --><!-- android:supportsRtl="true" --><!-- android:theme="@style/AppTheme"> --><!-- <activity android:name=".ui.location.LocationActivity"> --><!-- <intent-filter> --><!-- <action android:name="android.intent.action.MAIN" /> --><!-- <category android:name="android.intent.category.LAUNCHER" /> --><!-- </intent-filter> --><!-- </activity> --><!-- <activity android:name=".ui.restaurant.RestaurantListActivity" /> --><!-- </application> -->

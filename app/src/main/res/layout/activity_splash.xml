@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#080808"
+    tools:context="com.inducesmile.Eceats.Activity.SplashActivity">
+
+
+        <ImageView
+            android:layout_width="228dp"
+            android:layout_height="329dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/splash"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ECeats"
+        android:textColor="#ba160c"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>

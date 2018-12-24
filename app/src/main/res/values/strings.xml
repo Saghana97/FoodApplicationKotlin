@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ECEats</string>
+    <string name="title_activity_music"> Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">search</string>
+    <string name="content_authority">com.zkovar.foodfinderkt</string>
+    <string name="api_call_button_text">Find available cities!</string>
+    <string name="save_city_as_favorite">Save city as your favorite</string>
+    <string name="city_name_hint">Enter city name</string>
+    <string name="cuisine_text">Cuisine: </string>
+    <string name="cost_text">Cost $</string>
+    <string name="api_error">"Failed to retrieve restaurants. Try again later"</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="invalid_city_entry">Please enter some text as a city name</string>
+    <string name="location_api_failure_message">Failed to retrieve cities from the server. Please try again later.</string>
+    <string name="zero_cities_returned">No cities matched your search. Please try again.</string>
+    <string name="add_to_favorites">Restaurant added to favorites</string>
+    <string name="remove_from_favorites">Restaurant removed from favorites</string>
+    <string name="add_to_favorites_cd">Add to favorites</string>
+    <string name="show_favorites">Show favorites</string>
+</resources>
